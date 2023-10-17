@@ -1,0 +1,2 @@
+# lopfuzz
+Usefull wordlists
